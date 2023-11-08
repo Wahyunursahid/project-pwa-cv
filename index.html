@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <title>My CV || Wahyu</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h1>Wahyu Nursahid</h1>
+            <p>NIM: 21195023</p>
+            <p>Kelas: Regular Pagi / TI</p>
+            <p>Semester: 5</p>
+            <p>Mata Kuliah: Pemrograman Berbasis Mobile</p>
+            <p>Deskripsi: Belajar Mobile Programming PWA(Progressive Web App)</p>
+            <ul class="social-icon">follow me :  
+                <li><a href="https://api.whatsapp.com/send?phone=6285728339066" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://github.com/Wahyunursahid/project-pwa-cv.git" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.google.com/maps?q=jl.kh.ahmad+dahlan+no.37+pasarbatang,brebes" target="_blank"><i class="fa fa-map-marker"></i></a></li>
+            </ul>            
+        </div>
+        <div class="right-column">
+            <img src="brewoknavia.png" alt="Foto Anda">
+        </div>
+    </div>
+
+    <!-- Tambahkan form komentar -->
+    <div class="komentar">
+    <form id="comment-form">
+        <div>
+            <label for="name-input">Nama:</label>
+            <input type="text" id="name-input" placeholder="Nama">
+        </div>
+        <div>
+            <label for="email-input">Email:</label>
+            <input type="email" id="email-input" placeholder="Email">
+        </div>
+        <div>
+            <label for="comment-input">Komentar:</label>
+            <textarea  id="comment-input" placeholder="Kirim komentar"></textarea>
+        </div>
+        <button type="submit">Kirim</button>
+    </form>
+    
+    <!-- Menampilkan semua komentar yang disimpan di database -->
+    <div id="all-comments">
+        <h2>Semua Komentar:</h2>
+        <ul id="all-comments-list"></ul>
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="sw.js"></script>
+</html>
